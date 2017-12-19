@@ -2,6 +2,9 @@
 파이썬 셀레니움을 이용한 dcinside 자동 글쓰기
 python auto write dc inside using selenium
 
+# version
+python3.6, windows10
+
 # Installation
 
 From the repo directory:
