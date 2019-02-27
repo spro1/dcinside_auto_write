@@ -1,11 +1,14 @@
 ﻿# dc_auto_write
 파이썬 셀레니움을 이용한 DC인사이드 자동 글쓰기
+
 automated DCinside web articles writer by using selenium in python
 
 
 # version
 python3.x, windows10
+
 or
+
 python3.x & linux (tested in debian, ubuntu)
 
 
