@@ -28,7 +28,7 @@ git clone https://github.com/deathmojang/dc_auto_write
 pip install selenium configparser setuptools pyvirtual PyVirtualDisplay
 ```
 get and install google-chrome-stable package from https://www.chrome.com
-download chrome webdriver from https://chromedriver.chromium.org/downloads to the git directory
+download chrome webdriver from https://chromedriver.chromium.org/downloads and put it in the git directory
 
 
 # config setting
