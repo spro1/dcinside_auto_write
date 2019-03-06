@@ -1,17 +1,36 @@
 ﻿# dc_auto_write
-파이썬 셀레니움을 이용한 dcinside 자동 글쓰기
-python auto write dc inside using selenium
+파이썬 셀레니움을 이용한 DC인사이드 자동 글쓰기
+
+automated DCinside web articles writer by using selenium in python
+
 
 # version
-python3.6, windows10
+python3.x, windows10
+
+or
+
+python3.x & linux (tested in debian, ubuntu)
+
 
 # Installation
 
+For windows:
+
 From the repo directory:
 ```bash
-git clone https://github.com/spro1/dc_auto_write
+git clone https://github.com/deathmojang/dc_auto_write
 pip install -r requirements.txt
 ```
+
+For linux
+```bash
+git clone https://github.com/deathmojang/dc_auto_write
+pip install selenium configparser setuptools pyvirtual PyVirtualDisplay
+```
+get and install google-chrome-stable package from https://www.chrome.com
+
+download chrome webdriver from https://chromedriver.chromium.org/downloads and put it in the git directory
+
 
 # config setting
 Open user.conf
@@ -20,21 +39,15 @@ Open user.conf
 id = 아이디 ex) hongildong
 pw = 패스워드 ex) 1234qwer
 url = http://www.dcinside.com/
-login = //button[@id="lbStln"]
-gall = 갤러리 주소 ex) http://gall.dcinside.com/board/write/?id=coin
-save = //input[@src="http://nstatic.dcinside.com/dgn/gallery/images/btn_save.gif"]
+gall = 갤러리 주소 ex) http://gall.dcinside.com/board/write/?id=teamfortress2
+title = 제목 ex) "서버 열었다"
+content = 내용 (html로 작성) ex) "<p>들어와라</p>"
 ```
 
 # start
-제목, 본문 내용 변경
-edit auto_write_dc.py
-```bash
-driver.find_element_by_name('subject').send_keys('타이틀 제목')
-driver.find_element_by_tag_name("body").send_keys("본문 내용")
-```
 파이썬 프로그램 시작
 ```bash
-python auto_write_dc.py
+python3 auto_write_dc.py
 ```
 
 # 
